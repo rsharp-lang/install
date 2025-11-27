@@ -20,9 +20,14 @@ Depends: dotnet-sdk-8.0 (>= 8.0.110),
          libstdc++6 (>= 14.2.0),
          tzdata (>= 2024a),
          zlib1g (>= 1.3)
-Maintainer: xieguigang <your.email@example.com>
-Description: My custom R environment tools
+Maintainer: xieguigang <xieguigang@metabolomics.ac.cn>
+Description: R# runtime environment 
   This package contains a set of command-line tools for managing
   a specific R environment. It installs the necessary executables
   into /opt/renv/bin.
 " > renv-pkg/DEBIAN/control
+
+dpkg-deb --build renv-pkg
+mv renv-pkg.deb renv_1.0.0_amd64.deb
+
+# dpkg -i renv_1.0.0_amd64.deb
