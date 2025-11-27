@@ -21,12 +21,12 @@ if [ -d "/opt/renv/bin" ]; then
     export PATH="/opt/renv/bin:$PATH"
 fi
 EOF
+        # /var/lib/dpkg/info/rsharp.postinst: 25: source: not found
+        # source "${PROFILE_D_FILE}"
 
-        source "${PROFILE_D_FILE}"
-
-        R# --install.packages /opt/renv/packages/REnv.zip
-        R# --install.packages /opt/renv/packages/ggplot.zip
-        R# --install.packages /opt/renv/packages/LLMs.zip
+        dotnet /opt/renv/bin/R#.dll --install.packages /opt/renv/packages/REnv.zip
+        dotnet /opt/renv/bin/R#.dll --install.packages /opt/renv/packages/ggplot.zip
+        dotnet /opt/renv/bin/R#.dll --install.packages /opt/renv/packages/LLMs.zip
 
         ;;
 
