@@ -9,6 +9,8 @@ mkdir -p renv-pkg/opt/renv/packages
 
 /bin/cp -rf /mnt/renv/net8.0/* renv-pkg/opt/renv/bin/
 /bin/cp -rf /mnt/renv/packages/REnv.zip renv-pkg/opt/renv/packages/
+/bin/cp -rf /mnt/renv/packages/ggplot.zip renv-pkg/opt/renv/packages/
+/bin/cp -rf /mnt/renv/packages/LLMs.zip renv-pkg/opt/renv/packages/
 
 cat /mnt/renv/metadata.txt > renv-pkg/DEBIAN/control 
 cat /mnt/renv/postinst.sh > renv-pkg/DEBIAN/postinst

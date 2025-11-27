@@ -23,6 +23,8 @@ fi
 EOF
 
         R# --install.packages /opt/renv/packages/REnv.zip
+        R# --install.packages /opt/renv/packages/ggplot.zip
+        R# --install.packages /opt/renv/packages/LLMs.zip
 
         ;;
 
