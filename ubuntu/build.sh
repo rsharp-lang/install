@@ -7,8 +7,12 @@ mkdir -p renv-pkg/DEBIAN
 mkdir -p renv-pkg/opt/renv/bin
 
 /bin/cp -rf /mnt/renv/net8.0/* renv-pkg/opt/renv/bin/
+/bin/cp -rf /mnt/renv/packages/REnv.zip renv-pkg/opt/renv/packages/
 
 cat /mnt/renv/metadata.txt > renv-pkg/DEBIAN/control 
+cat /mnt/renv/postinst.sh > renv-pkg/DEBIAN/postinst
+
+chmod +x renv-pkg/DEBIAN/postinst
 
 dpkg-deb --build renv-pkg
 mv renv-pkg.deb renv_1.0.0_amd64.deb
