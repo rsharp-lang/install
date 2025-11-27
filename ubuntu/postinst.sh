@@ -1,7 +1,6 @@
 #!/bin/sh
 
 set -e
-
 PROFILE_D_FILE="/etc/profile.d/rsharp.sh"
 
 case "$1" in
