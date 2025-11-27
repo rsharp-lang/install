@@ -1,0 +1,11 @@
+Package: rsharp
+Version: 1.0.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Depends: dotnet-sdk-8.0 (>= 8.0.110)
+Maintainer: xieguigang <xieguigang@metabolomics.ac.cn>
+Description: R# runtime environment 
+  This package contains a set of command-line tools for managing
+  a specific R environment. It installs the necessary executables
+  into /opt/renv/bin.
