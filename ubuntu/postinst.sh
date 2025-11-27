@@ -1,5 +1,6 @@
 #!/bin/sh
 
+export PATH="/opt/renv/bin:$PATH"
 set -e
 PROFILE_D_FILE="/etc/profile.d/rsharp.sh"
 
