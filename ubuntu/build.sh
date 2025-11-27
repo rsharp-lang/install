@@ -5,6 +5,7 @@ cd /tmp/renv_packaging
 
 mkdir -p renv-pkg/DEBIAN
 mkdir -p renv-pkg/opt/renv/bin
+mkdir -p renv-pkg/opt/renv/packages
 
 /bin/cp -rf /mnt/renv/net8.0/* renv-pkg/opt/renv/bin/
 /bin/cp -rf /mnt/renv/packages/REnv.zip renv-pkg/opt/renv/packages/
