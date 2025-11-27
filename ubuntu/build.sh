@@ -13,4 +13,4 @@ cat /mnt/renv/metadata.txt > renv-pkg/DEBIAN/control
 dpkg-deb --build renv-pkg
 mv renv-pkg.deb renv_1.0.0_amd64.deb
 
-# dpkg -i renv_1.0.0_amd64.deb
+# dpkg -i /tmp/renv_packaging/renv_1.0.0_amd64.deb
