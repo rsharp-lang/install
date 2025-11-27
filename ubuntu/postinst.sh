@@ -22,6 +22,8 @@ if [ -d "/opt/renv/bin" ]; then
 fi
 EOF
 
+        source "${PROFILE_D_FILE}"
+
         R# --install.packages /opt/renv/packages/REnv.zip
         R# --install.packages /opt/renv/packages/ggplot.zip
         R# --install.packages /opt/renv/packages/LLMs.zip
