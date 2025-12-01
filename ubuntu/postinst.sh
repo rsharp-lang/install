@@ -26,6 +26,8 @@ EOF
         # source "${PROFILE_D_FILE}"
 
         dotnet /opt/renv/bin/R#.dll --install.packages /opt/renv/packages/REnv.zip
+        dotnet /opt/renv/bin/R#.dll --install.packages /opt/renv/packages/graphQL.zip
+        dotnet /opt/renv/bin/R#.dll --install.packages /opt/renv/packages/Markdown2PDF.zip
         dotnet /opt/renv/bin/R#.dll --install.packages /opt/renv/packages/ggplot.zip
         dotnet /opt/renv/bin/R#.dll --install.packages /opt/renv/packages/LLMs.zip
 
