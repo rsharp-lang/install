@@ -22,6 +22,6 @@ chmod +x renv-pkg/DEBIAN/postinst
 chmod +x renv-pkg/DEBIAN/postrm
 
 dpkg-deb --build renv-pkg
-/bin/cp -rf renv-pkg.deb /mnt/renv/renv_1.0.0_amd64.deb
+/bin/cp -rf renv-pkg.deb /mnt/renv/renv_1.2.10_amd64.deb
 
-# dpkg -i /mnt/renv/renv_1.0.0_amd64.deb
+# dpkg -i /mnt/renv/renv_1.2.10_amd64.deb
