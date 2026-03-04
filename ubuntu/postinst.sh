@@ -11,8 +11,10 @@ case "$1" in
         dotnet /opt/renv/bin/R#.dll --reset
         dotnet /opt/renv/bin/R#.dll --setup
         dotnet /opt/renv/bin/R#.dll /linux-bash
+        dotnet /opt/renv/bin/R#.dll /linux-bash --install_root
 
         chmod +x /opt/renv/bin/R#
+        chmod +x /usr/local/bin/R#
 
         echo "  -> add /opt/renv/bin into system environment PATH..."
         cat > "${PROFILE_D_FILE}" <<'EOF'
@@ -30,6 +32,7 @@ EOF
         dotnet /opt/renv/bin/R#.dll --install.packages /opt/renv/packages/Markdown2PDF.zip
         dotnet /opt/renv/bin/R#.dll --install.packages /opt/renv/packages/ggplot.zip
         dotnet /opt/renv/bin/R#.dll --install.packages /opt/renv/packages/LLMs.zip
+        dotnet /opt/renv/bin/R#.dll --install.packages /opt/renv/packages/Darwinism.zip
 
         ;;
 
