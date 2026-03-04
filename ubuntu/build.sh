@@ -13,6 +13,7 @@ mkdir -p renv-pkg/opt/renv/packages
 /bin/cp -rf /mnt/renv/packages/LLMs.zip renv-pkg/opt/renv/packages/
 /bin/cp -rf /mnt/renv/packages/Markdown2PDF.zip renv-pkg/opt/renv/packages/
 /bin/cp -rf /mnt/renv/packages/graphQL.zip renv-pkg/opt/renv/packages/
+/bin/cp -rf /mnt/renv/packages/Darwinism.zip renv-pkg/opt/renv/packages/
 
 cat /mnt/renv/metadata.txt > renv-pkg/DEBIAN/control 
 cat /mnt/renv/postinst.sh > renv-pkg/DEBIAN/postinst
